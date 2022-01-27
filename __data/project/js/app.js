@@ -60,7 +60,7 @@ cal.addEventListener("submit", (e) => {
     
     //process
     let from_test = a +" "+ from.options[from.selectedIndex].innerText;
-    let to_test = a+ " "+ to.options[to.selectedIndex].innerText;
+    let to_test = to.options[to.selectedIndex].innerText;
     let data = a * from_data;
     let money = data / to_data;
     let ans = money.toFixed(2);
