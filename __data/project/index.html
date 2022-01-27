@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/night-mode.css">
+    <link rel="icon" href="../logo_svg/logo-full.svg" type="image/icon type">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <!-- Primary Meta Tags -->
+    <title>MM Exchange</title>
+    <meta name="title" content="MM Exchange">
+    <meta name="description" content="For money exchanger.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mmsit.com">
+    <meta property="og:title" content="MM Exchange">
+    <meta property="og:description" content="For money exchanger.">
+    <meta property="og:image"
+        content="img/logo_full.svg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mmsit.com">
+    <meta property="twitter:title" content="MM Exchange">
+    <meta property="twitter:description" content="For money exchanger.">
+    <meta property="twitter:image"
+        content="img/logo_full.svg">
+    <title>Exchange Calculator</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+
+</style>
+</head>
+<body>
+    
+     <section class="output animate__animated animate__fadeInDown">
+        <div class="brand ">
+            <div class="logo">
+                <img src="../logo_svg/PNG/logostyle/logo.png" alt="">
+                
+                <p>MMEx</p></div>
+                <div class="res"><p id="result" >00.0</p></div>
+               
+            </div>
+   
+        
+        </div>
+        
+        
+         <div class="divider "></div>
+         <form class="calc " id="calc">
+             <div class="input_text"><label>Input</label><input type="number" class="input" id="input" placeholder="0.00" min=1 autofocus required></div>
+             <div class="from"><label>From</label><select id="from" required ><option value=""   selected>Select Currency</option></select></div>
+             <div class="to"><label>To</label><select id="to" required></select></div>
+            <div class="cal"><button class="btn">Calculate</button></div>
+         </form>
+           
+            <div class="history_data " id="data_history_list">
+                <table>
+                   <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Result</th>
+                        </tr>
+                   </thead>
+                   <tbody id="data_history">
+
+                   </tbody>
+                </table>
+            </div>
+     </section>
+     <button class="mode-chg animate__animated animate__slideInUp" onclick="ChgMode()">
+<i class="fa fa-moon" id="node-icon"></i>
+     </button>
+
+    <!-- <img src="../logo_svg/PNG/mmex_web.gif" alt=""> -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

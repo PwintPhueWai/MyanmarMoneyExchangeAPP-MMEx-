@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face{
+
+    font-family: "mm";
+    font-size: bold;
+    src:url(../font/MyanmarSagar.ttf);
+    
+}
+body{
+    transition: 0.5s;
+}
+:root{
+    --primary:#00AEEF;
+    --secondary:#707070;
+    --light:#fff;
+    --dark:#000;
+   --data_head:rgb(65, 65, 161);
+   --tb_soft:rgb(221, 219, 219);
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans Unicode';
+    color:var(--secondary);
+    font-family: sans-serif;
+}
+.output{
+    width:640px;
+    margin: 100px auto;
+}
+.brand img{
+    width:50px;
+    height:50px;   
+}
+.brand{
+    display: flex;
+   justify-content: space-between;
+}
+.logo{
+display: flex;
+align-items: center;
+
+} 
+.logo p{
+    margin:0px 10px;
+    color:red;
+    font-size: 30px;
+}
+.res{
+    
+    margin-top:28px;
+    font-size: 35px;
+}
+.res p{
+    color:var(--secondary);
+}
+.divider{
+    margin:2px ;
+    border: 2px solid var(--secondary);
+   
+}
+.calc{
+   display: flex;
+   margin-left: 0px;
+}
+
+.calc label{
+    display: block;
+    font-size: 22px;
+    color: var(--primary);
+    padding:5px;
+    
+}
+.input_text input{
+    padding:6px;
+    border-radius: 10px;
+    border-right: wheat;
+    border-left: wheat;
+    border-top: wheat;
+    font-size: 20px;
+    text-align: right;
+    width:100px;
+    
+}
+.input_text{
+    margin:0px 10px;
+}
+
+.calc select{
+    padding:7px;
+    font-size: 20px;
+    border-radius: 10px;
+    width:180px;
+    text-align: center;
+}
+.from,.to{
+    margin:0px 10px;
+}
+.calc option{
+    list-style: var(--secondary);
+}
+.cal input:active{
+border:1px solid cornsilk;
+}
+.cal button{
+     /* height: 55px; */
+     font-size: 15px;
+     font-weight: bolder;
+     margin-top:30px;
+     padding:10px;
+     border:1px solid wheat;
+     border-radius:10px;
+     border-collapse: collapse;
+     text-transform: uppercase;
+     height:50px;
+     color:var(--data_head);
+     background-color: rgb(248, 170, 67);
+}
+
+.cal button:active{
+    background-color:rgb(252, 191, 113);
+}
+/* .input_text,.from,.to,.cal{
+    width:100%;
+} */
+select::-ms-expand {	display: none; }
+select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+@-moz-document url-prefix(){
+/* select{border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; position: relative; overflow: hidden;} */
+select { width: 110%; background-position: right 30px center !important; border: none !important;}
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+select:focus,.input:focus,button:focus{
+   outline:none;
+}
+ td, th {
+  /* border: 1px solid var(--secondary); */
+  text-align: center;
+  padding:10px;
+  font-size: 19px; 
+  border-radius: 5px;
+ 
+}
+ th{
+   font-size: 20px;
+   color:var(--data_head);
+   background-color: var(--primary);
+}
+
+
+table { 
+  text-align: center;
+  margin-top:30px;
+  width:100%;
+}
+table tr td:first-child{
+    text-align: left;
+}
+table tr td:last-child{
+    text-align: right;
+}
+table tr{
+    background-color: var(--tb_soft);
+}
+table tr:hover{
+    background-color: rgb(250, 203, 116);
+}
+#Trspace{
+    text-align: center;
+}
+@media screen and (max-width:480px) {
+     .output,table{
+         margin-top:8px;
+         width:100%;
+     }
+     .table{
+         margin-top:5px;
+     }
+     .res{
+         margin:0px;
+         text-align: right;
+     }
+     .brand{   
+         padding:10px;
+         flex-flow: column;      
+     }
+     /* .from,.to,.input{
+         margin:0px;
+         padding:0px;
+     } */
+     .input_text .input{
+         margin:0px;
+         width:100%;
+     }
+    
+    #input{
+        text-align: left;
+    }
+     .calc{
+        flex-wrap: wrap;
+     }        
+.cal button{
+    width:100%;
+}
+.history_data{
+    width:100%;
+    animation-duration: 2s;
+}
+ }  
+ .mode-chg{
+     
+     width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(41, 41, 41);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+ }
+ .mode-chg i{
+     font-size:18px;
+     color:blanchedalmond;
+ }
+ 

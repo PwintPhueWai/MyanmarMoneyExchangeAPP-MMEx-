@@ -1,0 +1,30 @@
+:root{
+    --night_sec_soft:#3a3b3c;
+    --night_sec:#a9acb1;
+}
+
+
+
+body.night-mode{
+    background: #19191a;
+    transition: 0.5s;
+}
+.night-mode tr{
+    background-color: var(--night_sec_soft);
+}
+.night-mode .result{
+    color:var(--night_sec);
+}
+.night-mode td{
+    color:var(--night_sec);
+}
+.night-mode input,.night-mode select{
+    color:var(--night_sec);
+    background: var(--night_sec_soft);
+}
+.night-mode .mode-chg{
+    background-color: blanchedalmond;
+}
+.night-mode .mode-chg .fa{
+    color:rgb(41, 41, 41) !important;
+}
